@@ -25,6 +25,7 @@ function mOut(){
 /* function for question 4*/
 
 /*function checkPassword(){
+
 	document.getElementById("myForm").onsubmit = myFunction(){
 		myFunction()
 	};*/
@@ -46,6 +47,6 @@ function calculate() {
 		
 	
 	window.onload = init;
-
 }
+
 
