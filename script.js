@@ -1,12 +1,12 @@
 /*function for question 1*/
 let myTest1 = () =>{
 
-	document.getElementById("myTest1").innerHTML = "I'm right!";
+	document.getElementById("btn").innerHTML = "I'm right!";
 }
 
 let myTest2 = () => {
 
-	document.getElementById("myTest2").innerHTML = "No, I'm right!";
+	document.getElementById("btn").innerHTML = "No, I'm right!";
 }
 
 
@@ -24,29 +24,58 @@ function mOut(){
 
 /* function for question 4*/
 
-/*function checkPassword(){
-
-	document.getElementById("myForm").onsubmit = myFunction(){
-		myFunction()
-	};*/
-
-function calculate() {
-	"use strict";
-	let volume;
-	let radius = document.getElementById("radius").value;
+function checkPassword(){
 	
-	radius = Math.abs(radius);
-	volume = (4/3) * Math.PI * Math.pow(radius, 3);
-	volume = volume.toFixed(4);
-	document.getElementById("volume").value = volume;
-	return false;
+	let password = document.getElementById("pass").value;
+	/*let p_check = 12345678;*/
+	console.log(password)
+	if (password==="12345678") {
+		document.getElementById("pass").innerHTML = "It's correct";
+		return false;
+
+	} else{
+		alert("You put a wrong password!");
+		return false;
+
+
+	}
 }
-	function init() {
-		"use strict";
-		document.getElementById("MyForm").onsubmit = calculate;
+// function  checkPass(){
+//     let mypass =document.getElementById("pass").value;
+//     if(mypass != 12345678){
+//         alert ("Password Incorrect")
+//     }else{
+//         document.getElementById("text").innerHTML = "Information Correct";
+//     }
+// }
+
+
+
+// function calculate() {
+// 	"use strict";
+	
+// 	let radius = document.getElementById("radius").value;
+// 	let volume;
+	
+// 	radius = Math.abs(radius);
+// 	volume = (4/3) * Math.PI * Math.pow(radius, 3);
+// 	volume = volume.toFixed(4);
+// 	document.getElementById("volume").value = volume;
+// 	return false;
+// }
+// 	function init() {
+// 		"use strict";
+// 		document.getElementById("MyForm").onsubmit = calculate;
 		
 	
-	window.onload = init;
+// 	window.onload = init;
+// }
+function myFunc() {
+    document.getElementById("formvol").submit();
 }
-
+function volSphere(){
+    var radius = document.getElementById("radius").value;
+    var vol = (4/3) * Math.PI * Math.pow(radius, 3);
+    alert("The volume is " + vol)
+}
 

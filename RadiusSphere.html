@@ -7,26 +7,44 @@
 		<link rel="stylesheet" type="text/css" href="styles.css">
 	</head>
 	<body>
-		<div class="Input"><p>Input the radius value</p>
-		<form action=" " method="post" id="MyForm"></form>
-		<br>
-		<br>
 
-		<label for="radius">Radius</label>
-		<input type="text" name="radius" id="radius" required>
-		<br>
-		<br>
+		<ul class="navBar">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="HoverButton.html"> Hover Button</a></li>
+			<li><a href="form.html">form</a></li>
+			<li><a href="RadiusSphere.html">Radius sphere</a></li>
+			<li><a href="checkPassword.html">check password</a></li>
+		</ul>
 
-		<label for="volume">Volume</label>
-		<input type="text" name="volume" id="volume">
-		<br>
-		<br>
+		<h1>Volume of a Sphere</h1>
+        <p>Enter radius of a sphere to get the volume </p>
 
-		<input type="submit" value="Calculate" id="submit">
-		<br>
-		<br>
+        <form  method ="POST" id="formvol" onsubmit="return false" > 
 
-	</div>
+        <label for ="radius">Radius</label>
+        <input type= "text" name = "radius" id ="radius">
+        <br>
+
+        <input type= "submit" value = "Submit" onClick="volSphere()">
+
+            </form>
+
+           <!--  <script src="script.js"></script> -->
+           <script>
+           	function myFunc() {
+    document.getElementById("formvol").submit();
+}
+function volSphere(){
+    var radius = document.getElementById("radius").value;
+    var vol = (4/3) * Math.PI * Math.pow(radius, 3);
+    alert("The volume is " + vol)
+}
+           </script>
+    </body>
+
+
+	
+
 
 
 

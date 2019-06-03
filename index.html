@@ -2,20 +2,45 @@
 <html>
 	<head>
 		<title>HW3</title>
-		<meta name="viewport" content="widht=device-width, 
-		initial-scale=1. shrink-to-fit=no"/>
+		<!--meta name="viewport" content="widht=device-width, 
+		initial-scale=1. shrink-to-fit=no"/-->
 		<link rel="stylesheet" type="text/css" href="styles.css">
 	</head>
 	<body>
 
-		
-		<button onclick="myTest1()">1</button>
-		
-		<h1><p id="myTest1"></p></h1>
-		<button onclick="myTest2()">2</button>
-		<h1><p id="myTest2"></p></h1>
+
+		<ul class="navBar">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="HoverButton.html"> Hover Button</a></li>
+			<li><a href="form.html">form</a></li>
+			<li><a href="RadiusSphere.html">Radius sphere</a></li>
+			<li><a href="checkPassword.html">check password</a></li>
+		</ul>
+
+		<hr>
 
 
-		<script src="script.js"></script>
+		
+		<div class="btn">
+		<button class="b1" onclick="myTest1()" size="15" maxlength="30">1</button>
+		<!-- 
+		<h1><p id="myTest1"></p></h1> -->
+		<button class="b1" onclick="myTest2()" size="15" maxlength="30">2</button>
+		<p id="btn"> </p>
+		<!-- <h1><p id="myTest2"></p></h1> -->
+		</div>
+<!-- 
+		<script src="script.js"></script> -->
+		<script >
+			let myTest1 = () =>{
+
+	document.getElementById("btn").innerHTML = "I'm right!";
+}
+
+let myTest2 = () => {
+
+	document.getElementById("btn").innerHTML = "No, I'm right!";
+}
+		</script>
 	</body>
 </html>
